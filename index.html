@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+    <!-- CONEXIÓN DE CSS href (¿dónde está tu archivo?)-->
+    <link rel="stylesheet" href="/main.css">
+</head>
+<!-- body - sección html que el usuarix ve -->
+<body>
+    <!-- SECCIONES: HEADER, MAIN Y FOOTER -->
+    <!-- header - sección que contendrá la navegación -->
+    <header>
+        <!-- nav - elemento específicamente para navegar -->
+        <nav>
+            <!-- LISTA NO ORDENADA -->
+            <ul class="nav-right-section">
+                <li>
+                    <a href="https://www.google.com/intl/es-419/gmail/about/">Gmail</a>
+                </li>
+                <li>
+                    <a href="https://www.google.com/search?sca_esv=581406427&rlz=1C1VDKB_esMX1018MX1018&sxsrf=AM9HkKl0IQleWyqoJF2UIZ71880sPjM-Lg:1699672667982&q=imagenes&tbm=isch&source=univ&fir=QyjckPLcTSohTM%252C53-N2MbZIY2M8M%252C_%253BtADMwhAeIWxIsM%252CqJCNdI6Yklg4JM%252C_%253BDy4ChROQ8Nfv7M%252CXLjoTIu02IfmxM%252C_%253B1eFOqPzx-hucoM%252CdnXMOy9m951jtM%252C_%253BxWhmi82ZotbNrM%252ColO7Mg_W-CHvlM%252C_%253BgC8ItviYIM9RzM%252Cln9xEHasZBP00M%252C_%253BWMarsOEcrR2-dM%252Cl8IaLqWG6mnDAM%252C_%253B4OGZpcoOQmDwKM%252CkYGgN0zdQXg9EM%252C_%253BZmmLtTUxx4geZM%252CJnwiBhDDTaBYGM%252C_%253B-fVaj_KNJ4N3dM%252CX3TSQdC3HYVBBM%252C_%253BezavrY5U-uShKM%252CRa69H1SZ_o1TpM%252C_%253BT9I2p1t1QhVhFM%252CAJXXQJS8_HW-HM%252C_&usg=AI4_-kSTi1jwNjTpL7OuGhJgDc6KSgWPxw&sa=X&ved=2ahUKEwjz2e-M_rqCAxWYM0QIHSrCCHoQjJkEegQIFRAC&biw=958&bih=921&dpr=1">Imágenes</a>
+                </li>
+                <li class="menu">
+                    <a href=""></a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://lh3.googleusercontent.com/ogw/AKPQZvy0RjPZsd27ZpLWAV3zIicfc7mFH4d2eo72_n3p=s32-c-mo" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--MAIN - sección más importante de nuestra página-->
+    <main>
+    <!--SECTION- Estas cajas nos ayudan a encapsular o mudular nuestro contenido,
+    nos ayuda a identificar linguisticamente que estamos separando algo-->
+    <section class="main-logo">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"  alt="Logo de Google">
+    </section>
+    <!--buscador - input-->
+    <section class="main-input">
+        <div class="main-input-container">
+            <!--SPAN - lupa-->
+            <span class="search-icon"></span>
+            <!--input (texto)-->
+            <input type="text">
+            <a class="micro-icon" href="https://chromewebstore.google.com/detail/b%C3%BAsqueda-por-voz/hhfkcobomkalfdlmkongnhnhahkmnaad?hl=es&pli=1"></a>
+            <a class="cam-icon" href="https://lens.google/intl/es-419/"></a>
+        </div>
+    </section>
+
+    <section class="primeros-botones">
+        <button class="BUSCAR"> Buscar con Google </button>
+        <button class="ESPACIO"></button>
+        <button class="SUERTE"> Me siento con suerte </button>
+    </section>
+    <!--El diseño de los botones lo retomamos en el main, de momento solo el contenido principal-->
+    </main>
+
+    <!--A aprtir de aquí agregaremos el resto de botones que necesita nuestro inicio
+    Añadiremos el footer-->
+    <footer>
+        <section class="sec-01">
+            <ul class="mexico"> México</a></ul>
+        </section>
+        <section class="ultima-linea">
+            <ul class="informacion">
+                <a class="nav-left-section" href="https://ads.google.com/intl/es-419_mx/home/"> <u>Publicidades</u> </a>
+                <a class="nav-left-section" href="https://www.google.com/intl/es-419_mx/business/"> <u>Negocios</u></a>
+                <a class="nav-left-section" href="https://www.google.com/intl/es-419/chrome/dr/download/?brand=CHBD&gclid=CjwKCAiAxreqBhAxEiwAfGfndDuAb-yjchdV1-p9WLiOwAo75wF7GFE2hvrfAC70kPSJVLlP2kQxVxoCjHQQAvD_BwE&gclsrc=aw.ds"><u>Acerca de</u></a>
+                <a class="nav-right-section" href="https://support.google.com/a/table/7314896?hl=es"> <u>Nuevo</u></a>
+                <a class="nav-right-section" href="https://policies.google.com/?hl=es"> <u>Privacidad y condiciones</u></a>
+                <a class="nav-right-section" href="https://support.google.com/webdesigner/answer/7311414?hl=es"> <u>Preferencias</u></a>
+                <a class="nav-right-section" href="https://about.google/intl/ALL_mx/"> <u>Sobre Google</u></a>
+
+            </ul>
+         </section>
+     </footer>
+</body>
+</html>

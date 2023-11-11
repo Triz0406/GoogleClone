@@ -1,0 +1,219 @@
+body {
+    /* margin - margen del elemento */
+    margin: 0;
+    /* padding - "margen" hacia adentro */
+    padding: 0;
+    /* Fuentes del texto */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/* *********************************************** */
+/* ************************************** */
+/* ***************************** */
+/* NAVEGACIÓN */
+
+header {
+    /* width - ancho /// height-alto */
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    /* Justificado a la derecha */
+    /* Nos habilita usar flex-end, flex-start */
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    /* Eliminar puntitos */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* Centrado verticalmente */
+    align-items: center;
+}
+
+a {
+    /* Eliminar línea debajo de texto */
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    color: black;
+    margin-right: 20px;
+}
+/*ícono del menú */
+nav .nav-right-section .menu{
+    /*lo que vamos a hacer nos permite meter un ícono o imagen de fondo*/
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /*Que la imagen esté contenida en el elemento más grande*/
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    /*A veces el ícono se repite, esta función de background repeat la usamos para que 
+    solo nos aparezca una vez */
+    background-repeat: no-repeat;
+}
+/*imagen del usuario¨*/
+nav .nav-right-section img{
+/*redondeamos los bordes*/
+    border-radius: 100%;
+/*cambiar el tamaño de imagen*/
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+
+/*********************************************************************
+**********************************************************************
+********************SIGUIENTE SECCIÓN*********************************/
+main{
+    /*Agregar espacio entre header y main*/
+    margin-top: 200px;
+    text-align: center;
+}
+
+main .main-logo{
+    background-color: rgb(255, 255, 255);
+    width: 530px;
+    align-items: center;
+
+    /*Centrar absolutamente gracias a los mágernes automáticos*/
+    margin: 0 auto;
+}
+
+main .main-logo img{
+    height: 90px;
+}
+
+
+main .main-input {
+    width: 530px;
+    /*Centrar absolutamente gracias a los márgener automáticos
+    Vertical // Horizontal*/
+    margin: 0 auto;
+}
+
+main .main-input-container {
+    /*ancho borde || borde-estilo || borde-color*/
+    border: 1px solid #e4e6eb;
+    border-radius: 25px;
+    width: 525px;
+
+}
+
+
+main .main-input input{
+    height: 35px;
+    /*quitar el borde*/
+    border: none;
+    /*quitar el borde cuando está activo el input*/
+    outline: none;
+    width: 450px;
+}
+
+main .main-input-container:hover{
+    box-shadow: 2px 2px 2px 2px rgb(126, 124, 124);
+    
+
+}
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 13px;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    margin-left: 15px;
+   /* margin-right: 10px;*/
+}
+
+main .main-input .micro-icon{ 
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 12px;
+    width:20px;
+    height:20px;
+   
+}
+
+main .main-input .cam-icon {
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    padding-right: 11%;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-right: 5px;
+
+}
+
+main .primeros-botones {
+    padding-top: 2%; 
+    align-items: center;   
+    
+}
+
+main .BUSCAR {
+   border-color: transparent;
+   border-radius: 5px;
+
+   
+   /*padding-right: 30px;*/
+}
+/*Al momento de ingresar el sombreado en los botones se pone otro MAIN para utilizar el hover*/
+main .BUSCAR:hover{
+    box-shadow: 2px 2px 2px 2px rgb(126, 124, 124);
+    border-radius: 5px;
+}
+
+main .SUERTE {
+    border-color: transparent;
+    border-radius: 5px;
+}
+main .SUERTE:hover{
+    box-shadow: 2px 2px 2px 2px rgb(126, 124, 124);
+    border-radius: 5px;
+}
+main .ESPACIO {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(233, 233, 229);
+    color: rgb(88, 88, 88);
+    margin-top: 100%;
+}
+
+footer .sec-01 {
+    padding: auto;
+    border-bottom: 2px solid #f0f0ed;
+
+}
+footer .informacion {
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+footer .nav-right-section{
+    list-style: none;
+    float: right;
+    padding-left: 30px;
+    padding-right: 12px;
+    
+}
+
+footer .nav-left-section{
+    list-style: none;
+  padding-right: 30px;
+  padding-left: 12px;
+ }
